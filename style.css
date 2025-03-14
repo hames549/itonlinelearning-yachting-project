@@ -9,6 +9,8 @@ html, body {
 }
 
 .main-content {
+    display: flex;
+    align-items: center;
     width: 100%vw;
     position: relative; /* So that the pseudo-element for the overlay is positioned relative to it */
     background-image: url('Images/yacht1.jpg');
@@ -16,6 +18,8 @@ html, body {
     background-position: center;
     background-repeat: no-repeat;
     height: 50rem; /* Set the desired height */
+
+    /* figure out why heading is on left side */
 }
 
 .main-content::before {
@@ -40,12 +44,13 @@ html, body {
     justify-content: center;
     text-align: center;
     display: flex;
+    align-items: center;
     text-decoration: underline;
 }
 
 #maintext {
     text-align: center;
-    padding: 0rem 25rem;   
+    padding: 0rem 25rem;    
 }
 
 nav {
@@ -87,7 +92,7 @@ nav a {
 nav a:hover {
     color: #141414;
     border-bottom: 2px solid #141414 ;
-    background-color:rgba(79, 56, 168, 0.52)
+    background-color:rgb(121, 121, 123)
 }
 
 .main-content {
@@ -103,8 +108,10 @@ nav a:hover {
 }
 
 .footer {
+    display: flex;
+    align-items: center;
     font-size: 13px;
     color: #e6e6e6;
-    text-align: center;
-    padding: 1rem 0rem
+    padding: 1rem 0rem;
+
 }
