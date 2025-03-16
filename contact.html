@@ -3,24 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elegant Yachting Tours - Contact us</title>
+    <title>Elegant Yachting Tours - Contact Us</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/c85f64a73a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav>
-        <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="tours.html">Our Tours</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
+    <header>   <!-- Nav used to section out 'navigation' section at the top of a page. Nav is also 'semantic', meaning it describe content -->
+        <nav>
+            <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="tours.html">Our Tours</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
 
-    <h1>Contact Us</h1>
+        <div class="contact">
+            <div class="contact-box"></div>
+                <h2>Contact Us</h2>
+                <p id="contactp">If you have any questions or queries, please feel free to send us a messasge
+                    using the form below and will endevour to get back to you ASAP. Happy sailing!
+                </p>
+                <br>
+                <br>
+                <form action="form-handler.php">
+                    <label for="name">Enter Your Name</label> <br>
+                    <input type="text" id="name" name="name" placeholder="enter your name">
+                    <br>
+                    <br>
+                    <label for="email">Enter Your Email</label> <br>
+                    <input type="text" id="email" name="email" placeholder="enter your email">
+                    <br>
+                    <br>
+                    <label for="message">Enter Your Message</label> <br>
+                    <input type="text" id="message" name="message" placeholder="enter your message here">
+                    <br>
+                    <br>
+                    <br>
+                    <input type="submit" value="submit contact form" id="submit-button">
+                    <br>
+                    <br>
+                </form>
 
+        </div>
+    </header>
+    <footer class="footer">
+        <p>Elegant Yachting Tours. All rights reserved 2025.</p>
+        <div class="footer-icons">
+            <a href="https:www.facebook.com/" target=_blank><i class="fa-brands fa-facebook"></i></a>
+            <a href="https:www.instagram.com/" target=_blank><i class="fa-brands fa-instagram"></i></a>
+            <a href="https:www.youtube.com/" target=_blank><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </footer>   
 </body>
-</html>
+</html> 
